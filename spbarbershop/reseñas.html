@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - SP BarberShop</title>
+    <link rel="stylesheet" href="Estilos/estiloreseñas.css">
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html" style="color: white; text-decoration: none;">Reseñas - SP BarberShop</a></h1>
+</header>
+
+<main>
+    <div class="reseñas">
+        <h2>¡Déjanos tu reseña!</h2>
+
+        <!-- Formulario para agregar reseña -->
+        <form id="reseñaForm">
+            <input type="text" id="nombre_cliente" placeholder="Tu Nombre" required>
+            <textarea id="comentario" placeholder="Tu Reseña" rows="4" required></textarea>
+            <button type="submit">Enviar Reseña</button>
+        </form>
+
+        <h3>Reseñas de nuestros clientes:</h3>
+        <div id="listadoReseñas"></div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> SP BarberShop - Hugo Salvador Pinto. Todos los derechos reservados.</p>
+</footer>
+
+<script src="Scripts JS/scriptreseñas.js"></script>
+</body>
+</html>
