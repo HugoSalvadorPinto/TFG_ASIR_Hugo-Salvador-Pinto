@@ -1,0 +1,65 @@
+<!-- TFG ASIR - HUGO SALVADOR PINTO - 2024/2025 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Peluqueros - SP BarberShop</title>
+
+    <!-- Enlace a la hoja de estilos para esta sección -->
+    <link rel="stylesheet" href="Estilos/estiloPeluqueros.css">
+</head>
+<body>
+    <!-- Cabecera con el nombre del apartado y navegación -->
+    <header>
+        <h1>
+            <!-- Enlace de regreso a la página principal -->
+            <a href="index.html" style="color: white; text-decoration: none;">Nuestr@s especialistas...</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="nuestrospeluqueros.html">Nuestros Peluqueros</a></li> <!-- Página actual -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal con los perfiles de peluqueros -->
+    <section id="peluqueros">
+        <h2>Nuestros Peluqueros y Estilistas</h2>
+
+        <!-- Primer peluquero -->
+<div class="peluquero">
+    <img src="Fotos_Peluqueros/Peluquero1.jpg" alt="Peluquero 1">
+    <h3>Hugo Salvador</h3>
+    <p><strong>Especialidad:</strong> Cortes de pelo a tijera y máquina</p>
+    <p style="max-width: 700px; margin: 0 auto; text-align: center;">Con más de una década de trayectoria en el sector, Hugo es especialista en cortes clásicos y modernos de precisión. Su habilidad con tijera y máquina lo convierte en la mejor elección para quienes buscan estilo y perfección en cada detalle. Su trato cercano y profesional marca la diferencia en cada sesión.</p>
+</div>
+
+<!-- Segundo peluquero -->
+<div class="peluquero">
+    <img src="Fotos_Peluqueros/Peluquero2.jpeg" alt="Peluquero 2">
+    <h3>Ana González</h3>
+    <p><strong>Especialidad:</strong> Tintes, cuidados y tratamientos capilares</p>
+    <p style="max-width: 700px; margin: 0 auto; text-align: center;">Ana es una estilista experta en colorimetría, técnicas de tinte modernas y recuperación capilar. Con una sólida formación y experiencia, ofrece resultados personalizados que cuidan y realzan la salud del cabello. Su sensibilidad estética la posiciona como la referente en cambios de imagen.</p>
+</div>
+
+<!-- Tercer peluquero -->
+<div class="peluquero">
+    <img src="Fotos_Peluqueros/Peluquero3.jpeg" alt="Peluquero 3">
+    <h3>David Conrad</h3>
+    <p><strong>Especialidad:</strong> Cortes de pelo y diseño de barba</p>
+    <p style="max-width: 700px; margin: 0 auto; text-align: center;">David combina técnicas tradicionales con las últimas tendencias en barbería. Es un maestro del diseño y perfilado de barbas, sabiendo adaptarse a cada tipo de rostro y estilo. Su enfoque artístico asegura un resultado único para cada cliente, cuidando siempre los acabados y la simetría.</p>
+</div>
+    </section>
+
+    <!-- Pie de página con año automático mediante PHP -->
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> SP BarberShop - Hugo Salvador Pinto. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace opcional al script JS (si es necesario para esta página) -->
+    <script src="Scripts_JS/validacionReserva.js"></script>
+</body>
+</html>

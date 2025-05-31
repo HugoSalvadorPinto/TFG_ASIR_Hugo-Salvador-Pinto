@@ -1,0 +1,55 @@
+<!-- TFG ASIR - HUGO SALVADOR PINTO - 2024/2025 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - SP BarberShop</title>
+
+    <!-- Enlace a la hoja de estilos de esta sección -->
+    <link rel="stylesheet" href="Estilos/estiloReseñas.css">
+</head>
+<body>
+
+<!-- Cabecera principal con enlace de regreso -->
+<header>
+    <h1>
+        <a href="index.html" style="color: white; text-decoration: none;">
+            Reseñas - SP BarberShop
+        </a>
+    </h1>
+</header>
+
+<main>
+    <div class="reseñas">
+        <h2>¡Déjanos tu reseña!</h2>
+
+        <!-- Formulario para que los usuarios ingresen su nombre y comentario -->
+        <form id="reseñaForm">
+            <!-- Campo obligatorio para el nombre del cliente -->
+            <input type="text" id="nombre_cliente" placeholder="Tu Nombre" required>
+            
+            <!-- Campo de texto para ingresar la reseña del cliente -->
+            <textarea id="comentario" placeholder="Tu Reseña" rows="4" required></textarea>
+            
+            <!-- Botón para enviar la reseña -->
+            <button type="submit">Enviar Reseña</button>
+        </form>
+
+        <!-- Título para listar reseñas ya enviadas -->
+        <h3>Reseñas de nuestros clientes:</h3>
+
+        <!-- Aquí se cargarán dinámicamente las reseñas con JavaScript -->
+        <div id="listadoReseñas"></div>
+    </div>
+</main>
+
+<!-- Pie de página con año generado automáticamente desde PHP -->
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> SP BarberShop - Hugo Salvador Pinto. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Enlace al script JS que maneja el guardado y visualización de reseñas -->
+<script src="Scripts_JS/scriptReseñas.js"></script>
+</body>
+</html>
