@@ -6,20 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Añade un evento al formulario cuando se intenta enviar
     document.querySelector('form').addEventListener('submit', function(event) {
         // Captura los valores de los campos del formulario
-        const fecha = document.getElementById('fecha').value;
+        const fecha_cita = document.getElementById('fecha_cita').value;
         const nombre = document.getElementById('nombre').value;
         const telefono = document.getElementById('telefono').value;
         const email = document.getElementById('email').value;
 
         // Verifica que todos los campos estén completados
-        if (!fecha || !nombre || !telefono || !email) {
+        if (!fecha_cita || !nombre || !telefono || !email) {
             alert("Por favor, completa todos los campos.");
             event.preventDefault(); // Cancela el envío del formulario
             return; // Finaliza la función
         }
 
         // Convierte la fecha ingresada a objeto Date para validación de horario
-        const fechaObj = new Date(fecha);
+        const fechaObj = new Date(fecha_cita);
         const dia = fechaObj.getDay(); // Día de la semana (0=Domingo, 1=Lunes, ..., 6=Sábado)
         const hora = fechaObj.getHours(); // Hora seleccionada
 
